@@ -1,32 +1,77 @@
 #include <iostream>
-#include "Consumer.cpp"
+#include "Admin.h"
 
 using namespace std;
 
-int main()
-{
-    Consumer* c;
+int main() {
+    Admin admin;
+    int choice;
 
-    c = new ResidentialConsumer(1, "Ayan", 100, 40, 60);
-    cout << "---- Residential Consumer ----" << endl;
-    cout << c->Display();
-    cout << "Bill: " << c->calculateBill() << endl << endl;
+        cout << "-----SMART ELECTRICITY PORTAL-----" << endl;
+        cout << endl;
 
-    delete c;
+    do {
+        cout << "1. Add Consumer" << endl;
+        cout << "2. Display All" << endl;
+        cout << "3. Search Consumer" <<endl;
+        cout << "4. Generate Bill" << endl;
+        cout << "5. Set Rates" << endl;
+        cout << "6. Exit" << endl;
 
-    c = new CommercialConsumer(2, "Ali", 200);
-    cout << "---- Commercial Consumer ----" << endl;
-    cout << c->Display();
-    cout << "Bill: " << c->calculateBill() << endl << endl;
+        cin >> choice;
 
-    delete c;
+        switch(choice) {
+            case 1:
+                admin.addConsumer();
+                break;
+            case 2:
+                admin.displayAll();
+                break;
+            case 3:
+            {
+                int id;
+                cout << "Enter ID to search: ";
+                cin >> id;
 
-    c = new SolarConsumer(3, "Hamza", 100, 50, 50, 30);
-    cout << "---- Solar Consumer ----" << endl;
-    cout << c->Display();
-    cout << "Bill: " << c->calculateBill() << endl << endl;
+                Consumer* c = admin.searchConsumerbyID(id);
 
-    delete c;
+                if (c != NULL)
+                {
+                  cout << c->Display();
+                }
+                else
+                {
+                  cout << "Consumer not found!\n";
+                }
+                break;
+            }
+            case 4:
+                admin.generateBill();
+                break;
+            case 5:
+            {
+                float peak,offpeak,commercial,solar;
+
+                cout << "Enter Residential Peak Rate: ";
+                cin >> peak;
+
+                cout << "Enter Residential Off-Peak Rate: ";
+                cin >> offpeak;
+
+                cout << "Enter Commercial Rate: ";
+                cin >> commercial;
+
+                cout << "Enter Solar Rate: ";
+                cin >> solar;
+
+                admin.setRates(peak,offpeak,commercial,solar);
+                break;
+            }
+            default:
+                break;
+        }
+
+    } while(choice != 6);
 
     return 0;
 }
