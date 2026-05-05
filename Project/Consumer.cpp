@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Consumer.h"
+#include "Admin.h"
 using namespace std;
 
 Consumer::Consumer()
@@ -55,7 +55,7 @@ ResidentialConsumer::ResidentialConsumer(int id, string n, float unitC, float pe
 float ResidentialConsumer::calculateBill()
 {
     float bill;
-    return bill = (peakUnits * 20) + (offPeakUnits * 15);
+    return bill = (peakUnits * Admin::residentialPeakRate) + (offPeakUnits * Admin::residentialOffPeakRate);
 }
 
 CommercialConsumer::CommercialConsumer(int id, string n, float unitC) : Consumer(id, n, unitC)
@@ -66,7 +66,7 @@ CommercialConsumer::CommercialConsumer(int id, string n, float unitC) : Consumer
 float CommercialConsumer::calculateBill()
 {
     float bill;
-    return bill = commercialUnits * 25;
+    return bill = commercialUnits * Admin::commercialRate;
 }
 
 SolarConsumer::SolarConsumer(int id, string n, float unitC,float peak, float offPeak, float unitEx) : ResidentialConsumer(id, n, unitC, peak, offPeak)
@@ -79,12 +79,10 @@ float SolarConsumer::calculateBill()
     float netUnits;
     netUnits = unitConsumed - unitExported;
 
-    float rate = 10;
-
     if (netUnits <= 0)
         return 0;
 
-    return netUnits * rate;
+    return netUnits * Admin::solarRate;
 }
 
 

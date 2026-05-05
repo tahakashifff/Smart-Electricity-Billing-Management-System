@@ -5,12 +5,12 @@ class Admin{
     protected:
        Consumer* consumer[100];
        int count;
+       
+    public:
        static float residentialPeakRate;
        static float residentialOffPeakRate;
        static float commercialRate;
        static float solarRate;
-
-    public:
        Admin();
        void addConsumer();
        Consumer* searchConsumerbyID(int id);
