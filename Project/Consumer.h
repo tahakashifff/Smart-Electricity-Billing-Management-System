@@ -1,3 +1,4 @@
+#pragma once
 #include <string>
 using namespace std;
 
@@ -16,6 +17,7 @@ class Consumer{
        string getName();
        float getunitConsumed();
        virtual string Display();
+       virtual string saveData();
 };
 
 class ResidentialConsumer : public Consumer{
@@ -25,6 +27,7 @@ class ResidentialConsumer : public Consumer{
 
        ResidentialConsumer(int id, string n, float unitC, float peak, float offPeak);
        float calculateBill()override;
+       string saveData()override;
 };
 
 class CommercialConsumer : public Consumer{
@@ -33,6 +36,7 @@ class CommercialConsumer : public Consumer{
 
        CommercialConsumer(int id, string n, float unitC);
        float calculateBill()override;
+       string saveData()override;
 };
 
 class SolarConsumer : public ResidentialConsumer{
@@ -41,4 +45,9 @@ class SolarConsumer : public ResidentialConsumer{
        
        SolarConsumer(int id, string n, float unitC,float peak, float offPeak, float unitEx);
        float calculateBill()override;
+       string saveData()override;
 };
+
+string formatName(string name);
+string displayName(string name);
+static string ftos(float v);

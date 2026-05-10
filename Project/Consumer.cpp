@@ -1,6 +1,24 @@
 #include <iostream>
+#include <sstream>
+#include <algorithm>
 #include "Admin.h"
 using namespace std;
+
+string displayName(string name)
+{
+    replace(name.begin(), name.end(), '_', ' ');
+
+    return name;
+}
+
+static string ftos(float v)
+{
+    ostringstream ss;
+    ss << fixed;
+    ss.precision(2);
+    ss << v;
+    return ss.str();
+}
 
 Consumer::Consumer()
 {
@@ -39,8 +57,8 @@ string Consumer::Display()
     string result = "";
 
     result += "ID: " + to_string(ConsumerID) + "\n";
-    result += "Name: " + name + "\n";
-    result += "Units Consumed: " + to_string(unitConsumed) + "\n";
+    result += "Name: " + displayName(name) + "\n";
+    result += "Units Consumed: " + ftos(unitConsumed) + "\n";
 
     return result;
 }
@@ -85,7 +103,54 @@ float SolarConsumer::calculateBill()
     return netUnits * Admin::solarRate;
 }
 
+string Consumer::saveData()
+{
+    string data = "";
 
+    data += to_string(ConsumerID) + " ";
+    data += name + " ";
+    data += ftos(unitConsumed) + " ";
 
+    return data;
+}
 
+string ResidentialConsumer::saveData()
+{
+    string data = "Residential ";
 
+    data += Consumer::saveData();
+
+    data += ftos(peakUnits) + " ";
+    data += ftos(offPeakUnits);
+
+    return data;
+}
+
+string CommercialConsumer::saveData()
+{
+    string data = "Commercial ";
+
+    data += Consumer::saveData();
+
+    return data;
+}
+
+string SolarConsumer::saveData()
+{
+    string data = "Solar ";
+
+    data += Consumer::saveData();
+
+    data += ftos(peakUnits) + " ";
+    data += ftos(offPeakUnits) + " ";
+    data += ftos(unitExported);
+
+    return data;
+}
+
+string formatName(string name)
+{
+    replace(name.begin(), name.end(), ' ', '_');
+
+    return name;
+}

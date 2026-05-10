@@ -1,5 +1,7 @@
 #include <iostream>
+#include "Input.h"
 #include "Admin.h"
+#include "Consumer.h"
 using namespace std;
 
 float Admin::residentialPeakRate = 20;
@@ -14,41 +16,30 @@ Admin::Admin()
 
 void Admin::addConsumer()
 {
-    if (count>100)
+    if (count >= 100)
     {
         cout << "Storage full"<<endl;
         return;
     }
 
-    int type;
-    cout << "Select Consumer Type:" << endl;;
-    cout << "1. Residential" << endl;
-    cout << "2. Commercial" << endl;
-    cout << "3. Solar" << endl;
-    cin >> type;
+    cout << "Select Consumer Type:"<< endl;
+    cout << "1. Residential"<< endl;
+    cout << "2. Commercial"<< endl;
+    cout << "3. Solar"<< endl;
 
-    int id;
-    string name;
-    float units;
+    int type = inputIntRange("Enter Choice: ", 1, 3);
 
-    cout << "Enter ID: ";
-    cin >> id;
-    
-    cin.ignore();
-    cout << "Enter Name: ";
-    getline(cin,name);
-   
+    int id = inputInt("Enter ID: ");
+    string name  = inputName("Enter Name: ");
+    float  units = inputFloat("Enter Units Consumed: ");
 
-    cout << "Enter Units Consumed: ";
-    cin >> units;
+    name = formatName(name);
 
     if (type == 1)
     {
         float peak, offPeak;
 
-        cout << "Enter Peak Units: ";
-        cin >> peak;
-
+        peak= inputFloat("Enter Peak Units: ");
         offPeak = units - peak;
 
         consumer[count] = new ResidentialConsumer(id, name, units, peak, offPeak);
@@ -63,13 +54,9 @@ void Admin::addConsumer()
     {
         float peak, offPeak, exported;
 
-        cout << "Enter Peak Units: ";
-        cin >> peak;
-
-        offPeak = units - peak;
-
-        cout << "Enter Units Exported: ";
-        cin >> exported;
+        peak = inputFloat("Enter Peak Units: ");
+        offPeak  = units - peak;
+        exported = inputFloat("Enter Units Exported: ");
 
         consumer[count] = new SolarConsumer(id, name, units, peak, offPeak, exported);
     }
@@ -117,8 +104,7 @@ Consumer* Admin::searchConsumerbyID(int id)
 void Admin::generateBill()
 {
     int id;
-    cout << "Enter Consumer ID: ";
-    cin >> id;
+    id = inputInt("Enter Consumer ID: ");
 
     Consumer* c = searchConsumerbyID(id);
 
@@ -139,4 +125,14 @@ void Admin::setRates(float peak, float offpeak , float commercial , float solar)
     residentialOffPeakRate = offpeak;
     commercialRate = commercial;
     solarRate = solar;
+}
+
+Consumer** Admin::getConsumer()
+{
+    return consumer;
+}
+
+int& Admin::getCount()
+{
+    return count;
 }

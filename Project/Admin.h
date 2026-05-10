@@ -1,3 +1,4 @@
+#pragma once
 #include "Consumer.h"
 using namespace std;
 
@@ -17,4 +18,6 @@ class Admin{
        void setRates(float peak, float offpeak , float commercial , float solar);
        void displayAll();
        void generateBill();
+       Consumer** getConsumer();
+       int& getCount();
 };
