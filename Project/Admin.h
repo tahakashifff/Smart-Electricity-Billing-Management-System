@@ -1,5 +1,6 @@
 #pragma once
 #include "Consumer.h"
+#include "LoginManager.h"
 using namespace std;
 
 class Admin{
@@ -17,7 +18,9 @@ class Admin{
        Consumer* searchConsumerbyID(int id);
        void setRates(float peak, float offpeak , float commercial , float solar);
        void displayAll();
-       void generateBill();
        Consumer** getConsumer();
        int& getCount();
+       void registerUser(LoginManager[], int& userCount);
+       void showStatistics();
+       void updateConsumer();
 };

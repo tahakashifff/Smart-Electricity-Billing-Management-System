@@ -116,3 +116,250 @@ void FileManager::loadConsumers(Consumer* consumer[], int& count)
 
     file.close();
 }
+
+void FileManager::saveUsers(LoginManager users[], int count)
+{
+    ofstream file("users.txt");
+
+    for (int i = 0; i < count; i++)
+    {
+        file << users[i].saveData() << endl;
+    }
+
+    file.close();
+}
+
+void FileManager::loadUsers(LoginManager users[], int& count)
+{
+    ifstream file("users.txt");
+
+    if (!file)
+    {
+        return;
+    }
+
+    string username;
+    string password;
+    int id;
+
+    while (file >> username >> password >> id)
+    {
+        users[count] = LoginManager(username, password, id);
+
+        count++;
+    }
+
+    file.close();
+}
+
+void FileManager::saveBillRecord(MonthlyRecords record)
+{
+    ofstream file("bills.txt", ios::app);
+
+    file << record.saveRecord() << endl;
+
+    file.close();
+}
+
+void FileManager::viewBillHistory(int consumerID)
+{
+    ifstream file("bills.txt");
+
+    if (!file)
+    {
+        cout << "No bill records found!" << endl;
+        return;
+    }
+
+    int id;
+    string month;
+    float amount;
+    bool paid;
+    bool found = false;
+    float totalUnpaid = 0;
+    int unpaidMonths = 0;
+
+    while (file >> id >> month >> amount >> paid)
+    {
+        if (id == consumerID)
+        {
+            found = true;
+            cout << "Month: " << month << endl;
+
+            if (amount < 0)
+                cout << "Credit: " << -amount << " Rs (company owes you)" << endl;
+            else
+                cout << "Amount: " << amount << " Rs" << endl;
+
+            if (paid)
+                cout << "Status: PAID" << endl;
+            else
+            {
+                if (amount < 0)
+                    cout << "Status: CREDIT PENDING" << endl;
+                else
+                {
+                    cout << "Status: UNPAID" << endl;
+                    totalUnpaid += amount;
+                    unpaidMonths++;
+                }
+            }
+
+            cout << "----------------------" << endl;
+        }
+    }
+
+    file.close();
+
+    if (!found)
+    {
+        cout << "No bill records found for this consumer!" << endl;
+        return;
+    }
+
+    if (unpaidMonths > 0)
+        cout << "Remaining Due: " << totalUnpaid << " Rs (" << unpaidMonths << " month(s) unpaid)" << endl;
+    else
+        cout << "All bills paid!" << endl;
+}
+
+void FileManager::payConsumerBill(int consumerID, string month)
+{
+    ifstream file("bills.txt");
+
+    if (!file)
+    {
+        cout << "No bill records found!" << endl;
+        return;
+    }
+
+    ofstream temp("temp.txt");
+
+    int id;
+    string m;
+    float amount;
+    bool paid;
+    bool found = false;
+    bool alreadyPaid = false;
+
+    while (file >> id >> m >> amount >> paid)
+    {
+        if (id == consumerID && m == month)
+        {
+            found = true;
+            if (paid)
+                alreadyPaid = true;
+            else
+                paid = true;
+        }
+
+        temp << id << " " << m << " " << amount << " " << paid << endl;
+    }
+
+    file.close();
+    temp.close();
+
+    remove("bills.txt");
+    rename("temp.txt", "bills.txt");
+
+    if (!found)
+        cout << "No bill record found for month: " << month << endl;
+    else if (alreadyPaid)
+        cout << "Bill for " << month << " is already paid!" << endl;
+    else
+        cout << "Bill for " << month << " paid successfully!" << endl;
+}
+
+float FileManager::getUnpaidTotal(int consumerID)
+{
+    ifstream file("bills.txt");
+
+    if (!file)
+        return 0;
+
+    int id;
+    string month;
+    float amount;
+    bool paid;
+    float total = 0;
+
+    while (file >> id >> month >> amount >> paid)
+    {
+        if (id == consumerID && !paid && amount > 0)
+            total += amount;
+    }
+
+    file.close();
+    return total;
+}
+
+float FileManager::getPaidTotal(int consumerID)
+{
+    ifstream file("bills.txt");
+
+    if (!file)
+        return 0;
+
+    int id;
+    string month;
+    float amount;
+    bool paid;
+    float total = 0;
+
+    while (file >> id >> month >> amount >> paid)
+    {
+        if (id == consumerID && paid)
+            total += amount;
+    }
+
+    file.close();
+    return total;
+}
+
+bool FileManager::billExists(int consumerID, string month)
+{
+    ifstream file("bills.txt");
+
+    if (!file)
+        return false;
+
+    int id;
+    string m;
+    float amount;
+    bool paid;
+
+    while (file >> id >> m >> amount >> paid)
+    {
+        if (id == consumerID && m == month)
+        {
+            file.close();
+            return true;
+        }
+    }
+
+    file.close();
+    return false;
+}
+
+float FileManager::getCreditTotal(int consumerID)
+{
+    ifstream file("bills.txt");
+
+    if (!file)
+        return 0;
+
+    int id;
+    string month;
+    float amount;
+    bool paid;
+    float total = 0;
+
+    while (file >> id >> month >> amount >> paid)
+    {
+        if (id == consumerID && amount < 0)
+            total += -amount;
+    }
+
+    file.close();
+    return total;
+}

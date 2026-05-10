@@ -11,7 +11,7 @@ string displayName(string name)
     return name;
 }
 
-static string ftos(float v)
+string ftos(float v)
 {
     ostringstream ss;
     ss << fixed;
@@ -94,11 +94,7 @@ SolarConsumer::SolarConsumer(int id, string n, float unitC,float peak, float off
 
 float SolarConsumer::calculateBill()
 {
-    float netUnits;
-    netUnits = unitConsumed - unitExported;
-
-    if (netUnits <= 0)
-        return 0;
+    float netUnits = unitConsumed - unitExported;
 
     return netUnits * Admin::solarRate;
 }
@@ -153,4 +149,25 @@ string formatName(string name)
     replace(name.begin(), name.end(), ' ', '_');
 
     return name;
+}
+
+void ResidentialConsumer::updateUnits(float units, float peak, float offPeak, float extra)
+{
+    unitConsumed = units;
+    peakUnits = peak;
+    offPeakUnits = offPeak;
+}
+
+void CommercialConsumer::updateUnits(float units, float peak, float offPeak, float extra)
+{
+    unitConsumed = units;
+    commercialUnits = units;
+}
+
+void SolarConsumer::updateUnits(float units, float peak, float offPeak, float extra)
+{
+    unitConsumed = units;
+    peakUnits = peak;
+    offPeakUnits = offPeak;
+    unitExported = extra;
 }

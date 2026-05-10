@@ -18,6 +18,7 @@ class Consumer{
        float getunitConsumed();
        virtual string Display();
        virtual string saveData();
+       virtual void updateUnits(float units, float peak, float offPeak, float extra) = 0;
 };
 
 class ResidentialConsumer : public Consumer{
@@ -28,6 +29,7 @@ class ResidentialConsumer : public Consumer{
        ResidentialConsumer(int id, string n, float unitC, float peak, float offPeak);
        float calculateBill()override;
        string saveData()override;
+       void updateUnits(float units, float peak, float offPeak, float extra) override;
 };
 
 class CommercialConsumer : public Consumer{
@@ -37,6 +39,7 @@ class CommercialConsumer : public Consumer{
        CommercialConsumer(int id, string n, float unitC);
        float calculateBill()override;
        string saveData()override;
+       void updateUnits(float units, float peak, float offPeak, float extra) override;
 };
 
 class SolarConsumer : public ResidentialConsumer{
@@ -46,8 +49,9 @@ class SolarConsumer : public ResidentialConsumer{
        SolarConsumer(int id, string n, float unitC,float peak, float offPeak, float unitEx);
        float calculateBill()override;
        string saveData()override;
+       void updateUnits(float units, float peak, float offPeak, float extra) override;
 };
 
 string formatName(string name);
 string displayName(string name);
-static string ftos(float v);
+string ftos(float v);
