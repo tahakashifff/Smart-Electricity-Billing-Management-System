@@ -153,6 +153,7 @@ string formatName(string name)
 
 void ResidentialConsumer::updateUnits(float units, float peak, float offPeak, float extra)
 {
+    (void)extra;
     unitConsumed = units;
     peakUnits = peak;
     offPeakUnits = offPeak;
@@ -160,6 +161,9 @@ void ResidentialConsumer::updateUnits(float units, float peak, float offPeak, fl
 
 void CommercialConsumer::updateUnits(float units, float peak, float offPeak, float extra)
 {
+    (void)peak;
+    (void)offPeak;
+    (void)extra;
     unitConsumed = units;
     commercialUnits = units;
 }

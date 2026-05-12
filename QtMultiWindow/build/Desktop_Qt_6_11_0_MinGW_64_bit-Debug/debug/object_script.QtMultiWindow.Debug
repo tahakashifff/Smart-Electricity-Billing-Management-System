@@ -1,0 +1,14 @@
+debug/main.o
+debug/LoginWindow.o
+debug/AdminDashboard.o
+debug/UserDashboard.o
+debug/SystemContext.o
+debug/Admin.o
+debug/Consumer.o
+debug/FileManager.o
+debug/Input.o
+debug/LoginManager.o
+debug/MonthlyRecords.o
+debug/moc_LoginWindow.o
+debug/moc_AdminDashboard.o
+debug/moc_UserDashboard.o

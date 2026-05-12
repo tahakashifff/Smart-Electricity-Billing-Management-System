@@ -16,7 +16,7 @@ LoginManager::LoginManager(string u, string p, int id)
 
 LoginManager::~LoginManager(){}
 
-bool LoginManager::login(string u, string p)
+bool LoginManager::login(string u, string p) const
 {
     if (username == u && password == p)
     {
@@ -26,17 +26,17 @@ bool LoginManager::login(string u, string p)
     return false;
 }
 
-int LoginManager::getConsumerID()
+int LoginManager::getConsumerID() const
 {
     return linkedConsumerID;
 }
 
-string LoginManager::getUsername()
+string LoginManager::getUsername() const
 {
     return username;
 }
 
-string LoginManager::saveData()
+string LoginManager::saveData() const
 {
     string data = "";
 

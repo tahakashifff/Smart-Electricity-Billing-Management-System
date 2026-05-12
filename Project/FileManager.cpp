@@ -1,13 +1,62 @@
 #include <iostream>
 #include <fstream>
+#include <filesystem>
 #include "FileManager.h"
 #include "Admin.h"
 
 using namespace std;
+namespace fs = std::filesystem;
+
+static fs::path locateDataRoot()
+{
+    fs::path dir = fs::current_path();
+
+    while (true)
+    {
+        if (fs::exists(dir / "users.txt") || fs::exists(dir / "Consumers.txt") || fs::exists(dir / "rates.txt") || fs::exists(dir / "bills.txt"))
+            return dir;
+
+        if (fs::exists(dir / "Project"))
+            return dir / "Project";
+
+        if (!dir.has_parent_path() || dir.parent_path() == dir)
+            break;
+
+        dir = dir.parent_path();
+    }
+
+    return fs::current_path();
+}
+
+static fs::path dataReadPath(const string& fileName)
+{
+    fs::path root = locateDataRoot();
+
+    if (fs::exists(root / fileName))
+        return root / fileName;
+
+    if (fs::exists(root / "Project" / fileName))
+        return root / "Project" / fileName;
+
+    return root / fileName;
+}
+
+static fs::path dataWritePath(const string& fileName)
+{
+    fs::path root = locateDataRoot();
+
+    if (fs::exists(root / fileName))
+        return root / fileName;
+
+    if (fs::exists(root / "Project"))
+        return root / "Project" / fileName;
+
+    return root / fileName;
+}
 
 void FileManager::saveRates()
 {
-    ofstream rateValues("rates.txt", ios::out);
+    ofstream rateValues(dataWritePath("rates.txt"), ios::out);
 
     if (!rateValues)
     {
@@ -25,7 +74,7 @@ void FileManager::saveRates()
 
 void FileManager::loadRates()
 {
-    ifstream rateFile("rates.txt");
+    ifstream rateFile(dataReadPath("rates.txt"));
 
     if (!rateFile)
     {
@@ -42,7 +91,7 @@ void FileManager::loadRates()
 
 void FileManager::saveConsumers(Consumer* consumer[], int count)
 {
-    ofstream consumerData("Consumers.txt");
+    ofstream consumerData(dataWritePath("Consumers.txt"));
 
     if (!consumerData)
     {
@@ -60,7 +109,7 @@ void FileManager::saveConsumers(Consumer* consumer[], int count)
 
 void FileManager::loadConsumers(Consumer* consumer[], int& count)
 {
-    ifstream file("Consumers.txt");
+    ifstream file(dataReadPath("Consumers.txt"));
 
     if (!file)
     {
@@ -119,7 +168,7 @@ void FileManager::loadConsumers(Consumer* consumer[], int& count)
 
 void FileManager::saveUsers(LoginManager users[], int count)
 {
-    ofstream file("users.txt");
+    ofstream file(dataWritePath("users.txt"));
 
     for (int i = 0; i < count; i++)
     {
@@ -131,7 +180,7 @@ void FileManager::saveUsers(LoginManager users[], int count)
 
 void FileManager::loadUsers(LoginManager users[], int& count)
 {
-    ifstream file("users.txt");
+    ifstream file(dataReadPath("users.txt"));
 
     if (!file)
     {
@@ -154,7 +203,7 @@ void FileManager::loadUsers(LoginManager users[], int& count)
 
 void FileManager::saveBillRecord(MonthlyRecords record)
 {
-    ofstream file("bills.txt", ios::app);
+    ofstream file(dataWritePath("bills.txt"), ios::app);
 
     file << record.saveRecord() << endl;
 
@@ -163,7 +212,7 @@ void FileManager::saveBillRecord(MonthlyRecords record)
 
 void FileManager::viewBillHistory(int consumerID)
 {
-    ifstream file("bills.txt");
+    ifstream file(dataReadPath("bills.txt"));
 
     if (!file)
     {
@@ -225,7 +274,7 @@ void FileManager::viewBillHistory(int consumerID)
 
 void FileManager::payConsumerBill(int consumerID, string month)
 {
-    ifstream file("bills.txt");
+    ifstream file(dataReadPath("bills.txt"));
 
     if (!file)
     {
@@ -233,7 +282,7 @@ void FileManager::payConsumerBill(int consumerID, string month)
         return;
     }
 
-    ofstream temp("temp.txt");
+    ofstream temp(dataWritePath("temp.txt"));
 
     int id;
     string m;
@@ -259,8 +308,8 @@ void FileManager::payConsumerBill(int consumerID, string month)
     file.close();
     temp.close();
 
-    remove("bills.txt");
-    rename("temp.txt", "bills.txt");
+    remove(dataWritePath("bills.txt").string().c_str());
+    rename(dataWritePath("temp.txt").string().c_str(), dataWritePath("bills.txt").string().c_str());
 
     if (!found)
         cout << "No bill record found for month: " << month << endl;
@@ -272,7 +321,7 @@ void FileManager::payConsumerBill(int consumerID, string month)
 
 float FileManager::getUnpaidTotal(int consumerID)
 {
-    ifstream file("bills.txt");
+    ifstream file(dataReadPath("bills.txt"));
 
     if (!file)
         return 0;
@@ -295,7 +344,7 @@ float FileManager::getUnpaidTotal(int consumerID)
 
 float FileManager::getPaidTotal(int consumerID)
 {
-    ifstream file("bills.txt");
+    ifstream file(dataReadPath("bills.txt"));
 
     if (!file)
         return 0;
@@ -318,7 +367,7 @@ float FileManager::getPaidTotal(int consumerID)
 
 bool FileManager::billExists(int consumerID, string month)
 {
-    ifstream file("bills.txt");
+    ifstream file(dataReadPath("bills.txt"));
 
     if (!file)
         return false;
@@ -343,7 +392,7 @@ bool FileManager::billExists(int consumerID, string month)
 
 float FileManager::getCreditTotal(int consumerID)
 {
-    ifstream file("bills.txt");
+    ifstream file(dataReadPath("bills.txt"));
 
     if (!file)
         return 0;

@@ -11,7 +11,7 @@ class Consumer{
     public:
        Consumer();
        Consumer(int id , string n , float unitC);
-       ~Consumer();
+       virtual ~Consumer();
        virtual float calculateBill()=0;
        int getID();
        string getName();

@@ -1,0 +1,14 @@
+release/main.o
+release/LoginWindow.o
+release/AdminDashboard.o
+release/UserDashboard.o
+release/SystemContext.o
+release/Admin.o
+release/Consumer.o
+release/FileManager.o
+release/Input.o
+release/LoginManager.o
+release/MonthlyRecords.o
+release/moc_LoginWindow.o
+release/moc_AdminDashboard.o
+release/moc_UserDashboard.o

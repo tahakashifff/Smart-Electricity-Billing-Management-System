@@ -1,5 +1,6 @@
 Residential 101 Ali_Hassan 320.00 130.00 190.00
 Residential 102 Sara_Khan 210.00 80.00 130.00
-Commercial 103 City_Mart 850.00
-Commercial 104 Royal_Pharmacy 460.00
+Commercial 103 City_Mart 350.00 
+Commercial 104 Royal_Pharmacy 460.00 
 Solar 105 Usman_Tariq 500.00 100.00 400.00 250.00
+Residential 0 Taha 104.00 0.00 104.00

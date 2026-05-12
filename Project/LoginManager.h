@@ -12,8 +12,8 @@ class LoginManager{
        LoginManager();
        ~LoginManager();
        LoginManager(string u, string p, int id);
-       bool login(string u, string p);
-       int getConsumerID();
-       string getUsername();
-       string saveData();
+       bool login(string u, string p) const;
+       int getConsumerID() const;
+       string getUsername() const;
+       string saveData() const;
 };
