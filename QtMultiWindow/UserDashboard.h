@@ -14,15 +14,16 @@ public:
     explicit UserDashboard(SystemContext* context, int consumerID = 0, QWidget* parent = nullptr);
 
 private slots:
-    void onViewBill();
+    void onViewCurrentBill();
     void onViewHistory();
     void onPayBill();
+    void onBackToLogin();
 
 private:
     SystemContext* context;
     int consumerID;
     QTextEdit* output;
-    QLineEdit* consumerIdInput;
+    QLineEdit* linkedConsumerId;
     QLineEdit* month;
 
     void buildUi();

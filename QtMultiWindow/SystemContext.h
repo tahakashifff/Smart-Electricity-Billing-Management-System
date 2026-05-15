@@ -11,6 +11,7 @@ private:
 
     static QString money(float value);
     int findUserIndex(const QString& username) const;
+    bool monthExistsForConsumer(int consumerID, const QString& month) const;
 
 public:
     SystemContext();
@@ -18,9 +19,16 @@ public:
     bool adminLogin(const QString& username, const QString& password) const;
     int userLogin(const QString& username, const QString& password) const;
 
-    QString registerUserAndSaveUnits(const QString& username, const QString& password, int consumerID, int type, const QString& name, const QString& month, float units, float peakUnits, float exportedUnits);
-    QString searchUserText(const QString& username) const;
+    QString addConsumerText(int id, const QString& name, const QString& month, int type, float units, float peakUnits, float exportedUnits);
+    QString updateConsumerText(int id, const QString& month, float units, float peakUnits, float exportedUnits);
+    QString displayAllConsumersText();
     QString searchConsumerText(int id);
+    QString setRatesText(float peakRate, float offPeakRate, float commercialRate, float solarRate);
+    QString registerUserText(const QString& username, const QString& password, int consumerID);
+    QString searchUserText(const QString& username) const;
+    QString statisticsText();
+
+    QString viewCurrentBillText(int consumerID);
     QString billHistoryText(int consumerID);
     QString payBillText(int consumerID, const QString& month);
 };

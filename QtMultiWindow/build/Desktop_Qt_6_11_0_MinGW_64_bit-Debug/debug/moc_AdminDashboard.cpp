@@ -39,16 +39,37 @@ template <> constexpr inline auto AdminDashboard::qt_create_metaobjectdata<qt_me
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "AdminDashboard",
-        "onSearchUser",
+        "onAddConsumer",
         "",
-        "onRegisterUser"
+        "onUpdateConsumer",
+        "onDisplayAll",
+        "onSearchConsumer",
+        "onSetRates",
+        "onRegisterUser",
+        "onSearchUser",
+        "onShowStatistics",
+        "onBackToLogin"
     };
 
     QtMocHelpers::UintData qt_methods {
-        // Slot 'onSearchUser'
+        // Slot 'onAddConsumer'
         QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onRegisterUser'
+        // Slot 'onUpdateConsumer'
         QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onDisplayAll'
+        QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onSearchConsumer'
+        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onSetRates'
+        QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onRegisterUser'
+        QtMocHelpers::SlotData<void()>(7, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onSearchUser'
+        QtMocHelpers::SlotData<void()>(8, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onShowStatistics'
+        QtMocHelpers::SlotData<void()>(9, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onBackToLogin'
+        QtMocHelpers::SlotData<void()>(10, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -72,8 +93,15 @@ void AdminDashboard::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
     auto *_t = static_cast<AdminDashboard *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->onSearchUser(); break;
-        case 1: _t->onRegisterUser(); break;
+        case 0: _t->onAddConsumer(); break;
+        case 1: _t->onUpdateConsumer(); break;
+        case 2: _t->onDisplayAll(); break;
+        case 3: _t->onSearchConsumer(); break;
+        case 4: _t->onSetRates(); break;
+        case 5: _t->onRegisterUser(); break;
+        case 6: _t->onSearchUser(); break;
+        case 7: _t->onShowStatistics(); break;
+        case 8: _t->onBackToLogin(); break;
         default: ;
         }
     }
@@ -99,14 +127,14 @@ int AdminDashboard::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 9;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 9)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 9;
     }
     return _id;
 }

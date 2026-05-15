@@ -15,24 +15,46 @@ public:
     explicit AdminDashboard(SystemContext* context, QWidget* parent = nullptr);
 
 private slots:
-    void onSearchUser();
+    void onAddConsumer();
+    void onUpdateConsumer();
+    void onDisplayAll();
+    void onSearchConsumer();
+    void onSetRates();
     void onRegisterUser();
+    void onSearchUser();
+    void onShowStatistics();
+    void onBackToLogin();
 
 private:
     SystemContext* context;
     QTextEdit* output;
 
-    QLineEdit* searchUserName;
+    QLineEdit* addId;
+    QLineEdit* addName;
+    QLineEdit* addMonth;
+    QComboBox* addType;
+    QLineEdit* addUnits;
+    QLineEdit* addPeakUnits;
+    QLineEdit* addExportedUnits;
+
+    QLineEdit* updateId;
+    QLineEdit* updateMonth;
+    QLineEdit* updateUnits;
+    QLineEdit* updatePeakUnits;
+    QLineEdit* updateExportedUnits;
+
+    QLineEdit* searchConsumerId;
+
+    QLineEdit* peakRate;
+    QLineEdit* offPeakRate;
+    QLineEdit* commercialRate;
+    QLineEdit* solarRate;
+
     QLineEdit* regUser;
     QLineEdit* regPass;
     QLineEdit* regConsumerId;
 
-    QComboBox* consumerType;
-    QLineEdit* consumerName;
-    QLineEdit* consumerMonth;
-    QLineEdit* consumerUnits;
-    QLineEdit* consumerPeakUnits;
-    QLineEdit* consumerExported;
+    QLineEdit* searchUserName;
 
     void buildUi();
     void appendOutput(const QString& text);

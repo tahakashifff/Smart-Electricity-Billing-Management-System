@@ -39,19 +39,22 @@ template <> constexpr inline auto UserDashboard::qt_create_metaobjectdata<qt_met
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "UserDashboard",
-        "onViewBill",
+        "onViewCurrentBill",
         "",
         "onViewHistory",
-        "onPayBill"
+        "onPayBill",
+        "onBackToLogin"
     };
 
     QtMocHelpers::UintData qt_methods {
-        // Slot 'onViewBill'
+        // Slot 'onViewCurrentBill'
         QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onViewHistory'
         QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onPayBill'
         QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onBackToLogin'
+        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -75,9 +78,10 @@ void UserDashboard::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
     auto *_t = static_cast<UserDashboard *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->onViewBill(); break;
+        case 0: _t->onViewCurrentBill(); break;
         case 1: _t->onViewHistory(); break;
         case 2: _t->onPayBill(); break;
+        case 3: _t->onBackToLogin(); break;
         default: ;
         }
     }
@@ -103,14 +107,14 @@ int UserDashboard::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 4;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 4)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 3;
+        _id -= 4;
     }
     return _id;
 }

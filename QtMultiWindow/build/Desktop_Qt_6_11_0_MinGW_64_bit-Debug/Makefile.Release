@@ -1199,6 +1199,7 @@ release/LoginWindow.o: ../../LoginWindow.cpp ../../LoginWindow.h \
 		../../../Project/LoginManager.h \
 		../../AdminDashboard.h \
 		../../UserDashboard.h \
+		D:/Qt/6.11.0/mingw_64/include/QtGui/QFont \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/QFormLayout \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qformlayout.h \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/QLayout \
@@ -1445,6 +1446,7 @@ release/AdminDashboard.o: ../../AdminDashboard.cpp ../../AdminDashboard.h \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qrubberband.h \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
 		D:/Qt/6.11.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		D:/Qt/6.11.0/mingw_64/include/QtGui/QFont \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/QGridLayout \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qgridlayout.h \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayout.h \
@@ -1452,6 +1454,7 @@ release/AdminDashboard.o: ../../AdminDashboard.cpp ../../AdminDashboard.h \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qboxlayout.h \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/QGroupBox \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qgroupbox.h \
+		D:/Qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h \
 		D:/Qt/6.11.0/mingw_64/include/QtGui/qpicture.h \
@@ -1465,6 +1468,7 @@ release/AdminDashboard.o: ../../AdminDashboard.cpp ../../AdminDashboard.h \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		D:/Qt/6.11.0/mingw_64/include/QtGui/QScreen \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/QTextEdit \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qtextedit.h \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
@@ -1678,6 +1682,7 @@ release/UserDashboard.o: ../../UserDashboard.cpp ../../UserDashboard.h \
 		../../../Project/Admin.h \
 		../../../Project/Consumer.h \
 		../../../Project/LoginManager.h \
+		D:/Qt/6.11.0/mingw_64/include/QtGui/QFont \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/QFormLayout \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qformlayout.h \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/QLayout \
@@ -1685,17 +1690,21 @@ release/UserDashboard.o: ../../UserDashboard.cpp ../../UserDashboard.h \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayoutitem.h \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qboxlayout.h \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		D:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
+		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h \
+		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
+		D:/Qt/6.11.0/mingw_64/include/QtGui/qpicture.h \
+		D:/Qt/6.11.0/mingw_64/include/QtGui/qtextdocument.h \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/QLineEdit \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qlineedit.h \
-		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
 		D:/Qt/6.11.0/mingw_64/include/QtGui/qtextcursor.h \
-		D:/Qt/6.11.0/mingw_64/include/QtGui/qtextdocument.h \
 		D:/Qt/6.11.0/mingw_64/include/QtGui/qtextformat.h \
 		D:/Qt/6.11.0/mingw_64/include/QtGui/qpen.h \
 		D:/Qt/6.11.0/mingw_64/include/QtGui/qtextoption.h \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		D:/Qt/6.11.0/mingw_64/include/QtGui/QScreen \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/QTextEdit \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qtextedit.h \
 		D:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
