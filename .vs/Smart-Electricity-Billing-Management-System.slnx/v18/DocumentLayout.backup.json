@@ -1,0 +1,314 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\MonthlyRecords.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Project\\MonthlyRecords.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\FileManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Project\\FileManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\Consumer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Project\\Consumer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\Consumer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Project\\Consumer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\MonthlyRecords.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Project\\MonthlyRecords.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\Admin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Project\\Admin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Project\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\LoginManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Project\\LoginManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\SystemContext.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QtMultiWindow\\SystemContext.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\AdminDashboard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QtMultiWindow\\AdminDashboard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\AdminDashboard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QtMultiWindow\\AdminDashboard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\UserDashboard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QtMultiWindow\\UserDashboard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\UserDashboard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QtMultiWindow\\UserDashboard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\LoginWindow.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QtMultiWindow\\LoginWindow.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\QtMultiWindow.pro||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QtMultiWindow\\QtMultiWindow.pro||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\resources.qrc||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QtMultiWindow\\resources.qrc||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QtMultiWindow\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\main.cpp",
+              "RelativeDocumentMoniker": "Project\\main.cpp",
+              "ToolTip": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\main.cpp",
+              "RelativeToolTip": "Project\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-11T15:37:45.856Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Admin.cpp",
+              "DocumentMoniker": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\Admin.cpp",
+              "RelativeDocumentMoniker": "Project\\Admin.cpp",
+              "ToolTip": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\Admin.cpp",
+              "RelativeToolTip": "Project\\Admin.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-11T15:37:27.682Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\main.cpp",
+              "RelativeDocumentMoniker": "QtMultiWindow\\main.cpp",
+              "ToolTip": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\main.cpp",
+              "RelativeToolTip": "QtMultiWindow\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-15T15:11:52.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "resources.qrc",
+              "DocumentMoniker": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\resources.qrc",
+              "RelativeDocumentMoniker": "QtMultiWindow\\resources.qrc",
+              "ToolTip": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\resources.qrc",
+              "RelativeToolTip": "QtMultiWindow\\resources.qrc",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-15T15:11:14.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "QtMultiWindow.pro",
+              "DocumentMoniker": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\QtMultiWindow.pro",
+              "RelativeDocumentMoniker": "QtMultiWindow\\QtMultiWindow.pro",
+              "ToolTip": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\QtMultiWindow.pro",
+              "RelativeToolTip": "QtMultiWindow\\QtMultiWindow.pro",
+              "ViewState": "AgIAAB4AAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH9SURBVDhPlVO/axRBFP5m9\u002B5MzmC0sI9FLqCgBiTb\u002Bw8cYmEr6WwuwcKIEGujTSxEQQs74UBsba\u002B4g1x2LQQ9uDQBiwtqoYjerjs74/vG3b2ciuhbvp03M\u002B\u002B975tfylqLKIogZpVSGZ0/mcT5SZLA930TBIHPMSXDnEAYhoTNsszqzNhUZ/Z7qm2caDuOU0Hi0Ol07PsPH223202YR3g5uxRzLFMAjGuNEU8gClGv17HYWKr1ej3NHI\u002B/wozkGIkUISXYLwpWq1VE4S4Gb98w3BfyGdXv99lhoezc\u002BeUymIyFX1jRJ/aGA7bznqxbmApMmIsxBlPFYSVUKnvFeVMUUGx9X\u002BH\u002Bzg083L2Ng6/70Ebj4Ns7pCaF53nY/zzEdriBL8knmEw7gt8VCMPq8i08HzxGJgVe7j3Do2jTKXgxfIL1C1t4\u002BnoLWrsCxsvlKbZU4MtOP3i1iYunLqHq1aSIwVpw1yngx5Og5XnlEqYUXF\u002B5hzMnV\u002BQQDeSmOTYmNBur2N65iatnN8qccg/iOEaapj9Z88mKV8Hl09ccO21hvoH14A6Oz57AeDxmzLQC7vCVpbWyTxytzLlWbmY5Rp\u002BKxJ\u002BcAu\u002B51gZztWOyblnKL6Ad9qmYudMK5PtXy3MmCljxf4zxzWbTqHa7zf6R0WgU/\u002B05i7knXBj3q9VqqR98NPFZwq9yzQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2026-05-15T15:11:09.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginWindow.cpp",
+              "DocumentMoniker": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\LoginWindow.cpp",
+              "RelativeDocumentMoniker": "QtMultiWindow\\LoginWindow.cpp",
+              "ToolTip": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\LoginWindow.cpp",
+              "RelativeToolTip": "QtMultiWindow\\LoginWindow.cpp",
+              "ViewState": "AgIAAB8AAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-15T14:46:16.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserDashboard.cpp",
+              "DocumentMoniker": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\UserDashboard.cpp",
+              "RelativeDocumentMoniker": "QtMultiWindow\\UserDashboard.cpp",
+              "ToolTip": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\UserDashboard.cpp",
+              "RelativeToolTip": "QtMultiWindow\\UserDashboard.cpp",
+              "ViewState": "AgIAACIAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-15T14:17:09.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserDashboard.h",
+              "DocumentMoniker": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\UserDashboard.h",
+              "RelativeDocumentMoniker": "QtMultiWindow\\UserDashboard.h",
+              "ToolTip": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\UserDashboard.h",
+              "RelativeToolTip": "QtMultiWindow\\UserDashboard.h",
+              "ViewState": "AgIAABMAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-15T14:16:52.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AdminDashboard.cpp",
+              "DocumentMoniker": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\AdminDashboard.cpp",
+              "RelativeDocumentMoniker": "QtMultiWindow\\AdminDashboard.cpp",
+              "ToolTip": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\AdminDashboard.cpp",
+              "RelativeToolTip": "QtMultiWindow\\AdminDashboard.cpp",
+              "ViewState": "AgIAACQAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-15T14:16:27.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AdminDashboard.h",
+              "DocumentMoniker": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\AdminDashboard.h",
+              "RelativeDocumentMoniker": "QtMultiWindow\\AdminDashboard.h",
+              "ToolTip": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\AdminDashboard.h",
+              "RelativeToolTip": "QtMultiWindow\\AdminDashboard.h",
+              "ViewState": "AgIAABkAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-15T14:15:47.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SystemContext.cpp",
+              "DocumentMoniker": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\SystemContext.cpp",
+              "RelativeDocumentMoniker": "QtMultiWindow\\SystemContext.cpp",
+              "ToolTip": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\QtMultiWindow\\SystemContext.cpp",
+              "RelativeToolTip": "QtMultiWindow\\SystemContext.cpp",
+              "ViewState": "AgIAAAEAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-15T14:15:23.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MonthlyRecords.h",
+              "DocumentMoniker": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\MonthlyRecords.h",
+              "RelativeDocumentMoniker": "Project\\MonthlyRecords.h",
+              "ToolTip": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\MonthlyRecords.h",
+              "RelativeToolTip": "Project\\MonthlyRecords.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-11T15:37:59.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileManager.h",
+              "DocumentMoniker": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\FileManager.h",
+              "RelativeDocumentMoniker": "Project\\FileManager.h",
+              "ToolTip": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\FileManager.h",
+              "RelativeToolTip": "Project\\FileManager.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-11T15:37:41.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Consumer.h",
+              "DocumentMoniker": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\Consumer.h",
+              "RelativeDocumentMoniker": "Project\\Consumer.h",
+              "ToolTip": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\Consumer.h",
+              "RelativeToolTip": "Project\\Consumer.h",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-11T15:37:37.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Consumer.cpp",
+              "DocumentMoniker": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\Consumer.cpp",
+              "RelativeDocumentMoniker": "Project\\Consumer.cpp",
+              "ToolTip": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\Consumer.cpp",
+              "RelativeToolTip": "Project\\Consumer.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-11T15:37:32.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MonthlyRecords.cpp",
+              "DocumentMoniker": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\MonthlyRecords.cpp",
+              "RelativeDocumentMoniker": "Project\\MonthlyRecords.cpp",
+              "ToolTip": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\MonthlyRecords.cpp",
+              "RelativeToolTip": "Project\\MonthlyRecords.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-11T15:37:47.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginManager.cpp",
+              "DocumentMoniker": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\LoginManager.cpp",
+              "RelativeDocumentMoniker": "Project\\LoginManager.cpp",
+              "ToolTip": "D:\\Project OOP\\Smart-Electricity-Billing-Management-System\\Project\\LoginManager.cpp",
+              "RelativeToolTip": "Project\\LoginManager.cpp",
+              "ViewState": "AgIAAC8AAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-11T15:37:45.022Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

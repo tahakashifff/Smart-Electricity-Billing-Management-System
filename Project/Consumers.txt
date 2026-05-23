@@ -4,3 +4,5 @@ Commercial 103 City_Mart 200.00
 Commercial 104 Royal_Pharmacy 460.00 
 Solar 105 Usman_Tariq 500.00 100.00 400.00 250.00
 Solar 106 Taha 350.00 110.00 240.00 220.00
+Solar 107 test 10.00 2.00 8.00 1000.00
+Residential 108 test 600.00 300.00 300.00
